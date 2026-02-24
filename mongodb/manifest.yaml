@@ -72,8 +72,8 @@ spec:
   - metadata:
       name: mongodb-data
     spec:
-      accessModes: ReadWriteOnce
-      storageClassName: roboshop-ebs
+      accessModes: "ReadWriteOnce"
+      storageClassName: "roboshop-ebs"
       resources:
         requests:
           storage: 2Gi
