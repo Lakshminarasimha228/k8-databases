@@ -76,13 +76,13 @@ spec:
     spec: 
       containers: 
       - name: rabbitmq
-        image: lakshminarasimha228/rabbitmq:v1
+        image: rabbitmq:3
         envFrom:
         - secretRef:
             name: rabbitmq
         volumeMounts:
         - name: rabbitmq-data
-          mountPath: /data
+          mountPath: /var/lib/rabbitmq
   volumeClaimTemplates:
   - metadata:
       name: rabbitmq-data
